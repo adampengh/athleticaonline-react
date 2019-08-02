@@ -1,0 +1,29 @@
+// ==================================================================
+// Main Window
+// ==================================================================
+.main-content {
+    align-content: flex-start;
+    align-items: flex-start;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: MainContent;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1rem;
+    position: relative;
+    z-index: 0;
+}
+
+
+.page-heading {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    h1 {
+
+    }
+}

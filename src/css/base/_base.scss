@@ -1,0 +1,48 @@
+// ==================================================================
+// Base Styles
+// ==================================================================
+body {
+    color: $black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+#root {
+    height: 100%;
+}
+
+.app {
+    align-items: stretch;
+    display: grid;
+    grid-template-areas:
+        "Header Header"
+        "Sidebar MainContent"
+        "Footer Footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px 1fr 40px;
+    height: 100%;
+    width: 100%;
+}

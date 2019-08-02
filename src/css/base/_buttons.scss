@@ -1,0 +1,44 @@
+// ==================================================================
+// Buttons
+// ==================================================================
+.btn {
+    background: $black;
+    border: 1px solid transparent;
+    color: $white;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    position: relative;
+    transition: all 0.3s ease;
+    &::after {
+        background: $black;
+        border-color: $white;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition:
+            background 500ms,
+            width 500ms;
+        width: 0%;
+    }
+    &:hover {
+        &::after {
+            background: $white;
+            width: 100%;
+        }
+        span {
+            color: $black;
+        }
+    }
+
+    span {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 500;
+        position: relative;
+        transition: color 500ms;
+        z-index: 1;
+    }
+}
