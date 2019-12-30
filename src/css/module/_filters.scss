@@ -1,0 +1,19 @@
+// ==================================================================
+// Filters
+// ==================================================================
+.filter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+    h3 {
+        color: #999;
+        display: inline-block;
+        font-size: .75rem;
+        margin: 0;
+        padding-right: .5rem;
+    }
+}

@@ -46,3 +46,46 @@ a {
     height: 100%;
     width: 100%;
 }
+
+.app {
+    align-items: stretch;
+    display: grid;
+    grid-template-areas:
+        "Sidebar MainContent";
+    grid-template-columns: 12rem 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.green {
+    color: rgba(0, 176, 120, 1);
+    font-weight: bold;
+    position: relative;
+    &::before {
+        background: rgba(0, 176, 120, 1);
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        height: .5rem;
+        margin-right: .25rem;
+        position: relative;
+        width: .5rem;
+    }
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+    position: relative;
+    &::before {
+        background: red;
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        height: .5rem;
+        margin-right: .25rem;
+        position: relative;
+        width: .5rem;
+    }
+}

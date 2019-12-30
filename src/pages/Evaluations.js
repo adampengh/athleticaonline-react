@@ -1,20 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PageHeading from '../components/PageHeading';
+import EvaluationsList from '../components/EvaluationsList';
 
-const Evaluations = () => {
-    return (
-        <main className="main-content">
-            <PageHeading heading="Evaluations" />
-            <section className="flex flex-wrap align-item--start justify-content--between flex-direction--row">
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-            </section>
-        </main>
-    );
+import { evaluations } from '../data/evaluations';
+
+export default class Evaluations extends React.Component {
+    render() {
+        return(
+            <main className="main-content">
+                <PageHeading heading="Evaluations" />
+                <EvaluationsList
+                    evaluations={evaluations}
+                    formatDate={this.props.formatDate} />
+            </main>
+        )
+    }
 }
 
-export default Evaluations;
+Evaluations.propTypes = {
+    formatDate: PropTypes.func.isRequired
+}

@@ -1,18 +1,16 @@
 import React from 'react';
 import PageHeading from '../components/PageHeading';
+import TreatmentsList from '../components/TreatmentsList';
 
-const Treatments = () => {
+import { treatments } from '../data/treatments';
+
+const Treatments = (props) => {
     return (
         <main className="main-content">
             <PageHeading heading="Treatments" />
-            <section className="flex flex-wrap align-item--start justify-content--between flex-direction--row">
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-                <article className="widget flex">Widget</article>
-            </section>
+            <TreatmentsList
+                treatments={treatments}
+                formatDate={props.formatDate} />
         </main>
     );
 }

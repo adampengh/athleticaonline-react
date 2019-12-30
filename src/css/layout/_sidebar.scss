@@ -3,11 +3,35 @@
 // ==================================================================
 .sidebar {
     background: rgba(51, 51, 51, 1);
-    background: $off-white;
+    // background: $off-white;
+    background-image: linear-gradient(-45deg, rgba(40, 52, 64, 100%) 0%, rgba(30, 36, 42, 100%) 100%);
     color: #fff;
     grid-area: Sidebar;
     padding: 0;
-    z-index: 0;
+    // z-index: 0;
+
+    // ------------------------------------------------------------------
+    // Logo
+    // ------------------------------------------------------------------
+    &__logo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        h1 {
+            -webkit-text-fill-color: transparent;
+            align-items: center;
+            background: linear-gradient(to left, $orange-light 0%, $orange-dark 100%);
+            background-clip: text;
+            display: flex;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin: 0;
+            // text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.1);
+            text-transform: uppercase;
+        }
+    }
 
     nav + nav {
         margin-top: 1rem;
@@ -19,10 +43,10 @@
 
     &__subheading {
         // border-bottom: 1px solid #ccc;
-        color: #999;
+        color: #777;
         font-size: .6rem;
         margin: 0;
-        padding: .5rem .5rem .25rem;
+        padding: .5rem .75rem .25rem;
     }
 
     &__list {
@@ -35,12 +59,13 @@
 
         }
         &-link {
-            color: $black;
+            color: #999;
             display: block;
             font-size: .75rem;
             font-weight: 400;
-            padding: .5rem;
+            padding: .5rem .75rem;
             text-decoration: none;
+            &.active,
             &:hover {
                 background: linear-gradient(to right, $orange-dark 0%, $orange-light 100%);
                 color: #fff;

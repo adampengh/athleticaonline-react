@@ -2,8 +2,7 @@
 // Tables
 // ==================================================================
 .table {
-    border: 1px solid #ccc;
-    display: block;
+    // border: 1px solid #ccc;
     position: relative;
     width: 100%;
 
@@ -17,24 +16,17 @@
 
     thead,
     tbody {
-        display: block;
     }
 
     thead {
         tr {
-            display: flex;
             th {
-                align-content: center;
-                align-items: center;
-                background: rgba(72, 76, 80, 0.7);
-                border-right: 1px solid #ccc;
-                color: $white;
-                display: inline-flex;
+                background: #f4f4f7;
+                border-bottom: 2px solid #DADCD8;
+                color: $black;
                 font-size: .75rem;
-                justify-content: flex-start;
                 line-height: .75rem;
                 padding: .5rem .25rem;
-                text-align: center;
                 &:last-child {
                     border-right: none;
                 }
@@ -44,24 +36,20 @@
 
     tbody {
         tr {
-            border-top: 1px solid #ccc;
-            display: flex;
+            // border-top: 1px solid #ccc;
             font-size: 0;
             td {
-                align-content: center;
-                align-items: center;
-                border-right: 1px solid #ccc;
+                // border-right: 1px solid #ccc;
                 color: $black;
-                display: inline-flex;
                 font-size: .75rem;
                 height: 2rem;
-                justify-content: flex-start;
                 line-height: .75rem;
                 min-height: 1rem;
                 padding: .5rem .25rem;
                 &:last-child {
                     border-right: none;
                 }
+
             }
         }
     }
@@ -72,12 +60,9 @@
     // ------------------------------------------------------------------
     &-striped {
         tbody {
-            a {
-                display: block;
+            tr {
                 &:nth-child(even) {
-                    tr {
-                        background: rgba(255, 106, 0, 0.1);
-                    }
+                    background: rgba(255, 106, 0, 0.1);
                 }
             }
         }
@@ -89,10 +74,8 @@
     // ------------------------------------------------------------------
     &-hover {
         tbody {
-            a:hover {
-                tr {
-                    background: rgba(255, 106, 0, 0.2);
-                }
+            tr:hover {
+                background: rgba(255, 106, 0, 0.15);
             }
         }
     }

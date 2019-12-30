@@ -1,0 +1,15 @@
+// ==================================================================
+// Breadcrumbs
+// ==================================================================
+.breadcrumbs {
+    display: block;
+    a {
+        color: #333;
+        display: inline-block;
+        font-size: .75rem;
+        margin-bottom: 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

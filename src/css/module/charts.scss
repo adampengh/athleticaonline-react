@@ -1,0 +1,35 @@
+// ==================================================================
+// Charts/Graphs
+// ==================================================================
+.chart {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    canvas {
+        background: transparent;
+    }
+
+    progress {
+        background-color: #f3f3f3;
+        border: 0;
+        border-radius: 0;
+        height: .25rem;
+        width: 100%;
+    }
+    progress::-webkit-progress-bar {
+        background: #f0f0f0;
+    }
+    progress::-webkit-progress-value {
+        /* style rules */
+        background: rgba(255, 102, 0, 0.5);
+    }
+    progress::-moz-progress-bar {
+        /* style rules */
+    }
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 2000ms ease-out;
+}

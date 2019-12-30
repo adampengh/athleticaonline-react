@@ -5,6 +5,7 @@
 
 
 @import "variables";
+@import "utilities/mixins";
 
 // ==================================================================
 // Base
@@ -18,8 +19,10 @@
 // ==================================================================
 // Layout
 // ==================================================================
+@import "layout/breadcrumbs";
 @import "layout/flex";
 @import "layout/footer";
+@import "layout/grid";
 @import "layout/header";
 @import "layout/main-content";
 @import "layout/sidebar";
@@ -29,8 +32,12 @@
 // ==================================================================
 // Module
 // ==================================================================
+@import "module/charts";
+@import "module/dashboard";
+@import "module/filters";
+@import "module/lightbox";
 @import "module/modal";
-@import "module/quick-stats";
+@import "module/page-heading";
 @import "module/widget";
 
 

@@ -13,14 +13,23 @@
 }
 
 .widget {
-    flex: 1 1 33.33333%;
+    flex: 1 1 100%;
     padding: .5rem;
+    @media screen and (min-width: $breakpoint-md) {
+        flex: 1 1 50%;
+    }
+    @media screen and (min-width: $breakpoint-lg) {
+        flex: 1 1 33.33333%;
+    }
+
 
     &__inner {
         background: #fff;
         border: 1px solid #ccc;
+        display: block;
         margin-bottom: .25rem;
         min-height: 200px;
         padding: .5rem;
+        width: 100%;
     }
 }
