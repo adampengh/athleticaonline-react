@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/athleticaonline-react/precache-manifest.d5365f818c49a665d4cabdecb3540149.js"
+  "/athleticaonline-react/precache-manifest.d5a6e47ea8a2c15f930f23bc8a8888b7.js"
 );
 
 self.addEventListener('message', (event) => {
